@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Review Kode Bash</title>
+</head>
+<body>
+    <h1>Project name: Proyek Shell Scripting</h1>
+
+    <h2>Project Summary</h2>
+    <p>
+        Skrip Bash ini dirancang untuk memberikan wawasan tentang penggunaan sumber daya sistem, 
+        seperti memori dan disk. Kode ini mencakup beberapa perintah untuk menampilkan informasi 
+        yang relevan kepada pengguna. Jika ada bagian yang tidak diperlukan, seperti penggunaan 
+        variabel atau metode yang tidak digunakan, sebaiknya dihapus untuk menjaga kebersihan kode.
+    </p>
+
+    <p>
+        Selain itu, penting untuk selalu memperhatikan sumber daya yang tidak pernah digunakan dalam 
+        proyek. Hal ini dapat memengaruhi kinerja dan ukuran hasil akhir. Menghapus elemen yang tidak 
+        diperlukan dapat meningkatkan efisiensi dan mengurangi ukuran proyek secara keseluruhan.
+    </p>
+
+    <h2>Error Notes</h2>
+    <p>
+        Dalam skrip ini, tidak ada error yang terlihat selama pengujian. Namun, jika ada error yang 
+        terjadi, misalnya, perintah yang tidak ditemukan atau output yang tidak seperti yang 
+        diharapkan, cara terbaik untuk mengatasinya adalah memeriksa kembali perintah yang digunakan 
+        dan memastikan mereka didukung di sistem tempat skrip dijalankan.
+    </p>
+
+    <h2>Code Review</h2>
+    
+    <p>
+        Berikut adalah beberapa bagian kode yang diulas, dengan feedback dan saran untuk perbaikan:
+    </p>
+    
+    <h3>Bagian 1: Header dan Struktur Skrip</h3>
+    <pre>
+    echo -e "=======================================================\n"
+    echo -e "Menampilkan ukuran memory pada sistem dalam MB...\n"
+    echo -e "=======================================================\n"
+    </pre>
+    <p>
+        Bagian ini memberikan struktur yang jelas untuk skrip. Penggunaan garis pemisah dan teks yang 
+        informatif membantu pengguna memahami konteks informasi yang disajikan. Penggunaan `echo -e` 
+        memungkinkan penggunaan karakter newline untuk output yang lebih bersih.
+    </p>
+    
+    <h3>Bagian 2: Informasi Memori</h3>
+    <pre>
+    free --mega | sort
+    sleep 3s | echo -e "\n"
+    </pre>
+    <p>
+        Perintah `free --mega` memberikan informasi tentang penggunaan memori dalam MB. Jeda waktu 
+        setelah menampilkan informasi adalah pendekatan yang baik untuk memberi pengguna waktu 
+        membaca hasilnya. Hal ini menunjukkan perhatian terhadap pengalaman pengguna.
+    </p>
+
+    <h3>Bagian 3: Penggunaan Disk dalam GB</h3>
+    <pre>
+    echo -e "Menampilkan penggunaan disk pada filesystem dalam GB...\n"
+    df -hBG | sort
+    sleep 3s | echo -e "\n"
+    </pre>
+    <p>
+        Bagian ini menampilkan penggunaan disk dalam GB, yang memberikan gambaran jelas tentang 
+        kapasitas dan penggunaan. Jeda waktu 3 detik adalah tambahan yang baik untuk memberikan 
+        waktu bagi pengguna untuk memahami informasi. Header yang jelas membantu memberikan konteks.
+    </p>
+
+    <h3>Bagian 4: Penggunaan Ruang Disk dalam Persentase</h3>
+    <pre>
+    echo -e "Menampilkan penggunaan ruang disk (Filesystem dan Persentase Penggunaan)...\n"
+    df -x tmpfs --output=source,pcent | sort
+    sleep 1m | echo -e "\n"
+    </pre>
+    <p>
+        Bagian ini menampilkan persentase penggunaan disk yang sangat berguna untuk memantau 
+        kapasitas. Namun, jeda waktu 1 menit mungkin terlalu lama. Pertimbangkan untuk menguranginya 
+        untuk meningkatkan responsivitas skrip. 
+    </p>
+
+    <h3>Bagian 5: Ucapan Terima Kasih dan Penutup</h3>
+    <pre>
+    echo "======================================================="
+    echo "Terima kasih..."
+    echo "======================================================="
+    </pre>
+    <p>
+        Bagian penutup dengan ucapan terima kasih adalah sentuhan yang menyenangkan. Garis pemisah 
+        menambahkan elemen visual yang bagus, membuat skrip lebih terstruktur dan mudah dipahami.
+    </p>
+
+
+</body>
+</html>
