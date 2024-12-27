@@ -3,69 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curriculum Vitae - Afrinaldi </title>
+    <title>Curriculum Vitae - Afrinaldi</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            border-bottom: 2px solid #ddd;
+        }
+        .header h1 {
+            font-size: 2em;
+            margin: 0;
+        }
+        .header p {
+            margin: 10px 0 0;
+            color: #555;
+            font-size: 1em;
+        }
+        .photo-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .photo-container img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #ddd;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            margin-bottom: 10px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+        .contact-info a {
+            display: block;
+            margin-bottom: 5px;
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        .certification a {
+            text-decoration: none;
+            color: #007BFF;
+            position: relative;
+        }
+        .certification a:hover::after {
+            content: attr(href);
+            position: absolute;
+            top: 20px;
+            left: 0;
+            background: #f1f1f1;
+            padding: 5px;
+            border: 1px solid #ddd;
+            font-size: 0.8em;
+            color: #555;
+            white-space: nowrap;
+            z-index: 100;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <header class="header">
-            <h1>Afrinaldi</h1>
-            <p>IT enthusiast | technician | Quality Control | Laboratory Analyst | RnD | Quality Assurance</p>
+            <h1>Curriculum Vitae</h1>
         </header>
- 	<section class="section Resume">
-            <h2>Resume</h2>
+
+        <div class="photo-container">
+            <img src="profile.jpg" alt="Profile Picture">
+            <h2>Afrinaldi</h2>
+            <p>IT enthusiast | Technician | Quality Control | Laboratory Analyst | RnD | Quality Assurance</p>
+        </div>
+
+        <section class="section personal-info">
+            <h2>Personal Information</h2>
             <ul>
-                <li><p>Welcome to my resume repository!</p>
-
-<p>Here, you'll find details about my professional background, experience, and skills. This resume is designed to give you a brief overview of who I am and what I bring to the table.</p>
-
-<h2 id="contents">Contents</h2>
-
-<ul>
-  <li><strong>Work Experience</strong>: Details about my work experience in various industries.</li>
-  <li><strong>Education</strong>: Information about my formal education, including degrees and institutions.</li>
-  <li><strong>Skills</strong>: A list of skills and expertise I possess.</li>
-  <li><strong>Projects</strong>: Significant projects I've worked on and their outcomes.</li>
-  <li><strong>Contact</strong>: The best way to get in touch with me if you're interested in collaborating.</li>
-</ul>
-
-<p>If you have any questions or would like to get more information, feel free to reach out!</p>
-
-<p>Thank you for visiting my repository.</p>
-</ul>
+                <li><strong>Full Name:</strong> Afrinaldi</li>
+                <li><strong>Place, Date of Birth:</strong> Padang, April 8, 1983</li>
+                <li><strong>Gender:</strong> Male</li>
+                <li><strong>Religion:</strong> Islam</li>
+                <li><strong>Education:</strong> Vocational High School</li>
+                <li><strong>Address:</strong> Jln. Cangkeh Nan XX no. 21b, Lubuk Begalung, Padang</li>
+            </ul>
         </section>
 
         <section class="section experience">
             <h2>Experience</h2>
             <ul>
-                <li> Technician | Quality Control | Laboratory Analyst| PT Teluk Luas | 2007 - Present</li>
+                <li>Technician | Quality Control | Laboratory Analyst | PT Teluk Luas | 2007 - Present</li>
             </ul>
         </section>
+
         <section class="section education">
             <h2>Education</h2>
             <ul>
                 <li>SMKN 5 Padang | 2001</li>
             </ul>
         </section>
+
         <section class="section skills">
             <h2>Skills</h2>
             <ul>
                 <li>Programming Languages: JavaScript, Python</li>
                 <li>Frameworks: React, Node.js</li>
                 <li>Database: MySQL, PostgreSQL</li>
-		<li>Others : DevOps , Machine Learning</li>
+                <li>Others: DevOps, Machine Learning</li>
             </ul>
         </section>
+
+        <section class="section certification">
+            <h2>Licenses and Certifications</h2>
+            <ul>
+                <li><a href="https://www.coursera.org/account/accomplishments/specialization/J1GY5NGTPN3X" target="_blank">Cybersecurity Operations Fundamentals Specialization</a></li>
+                <li><a href="https://www.coursera.org/account/accomplishments/specialization/8VK66MIYYA35" target="_blank">Google IT Support Specialization</a></li>
+                <li><a href="https://www.coursera.org/account/accomplishments/specialization/J1GY5NGTPN3X" target="_blank">Google Cybersecurity Specialization</a></li>
+                <li><a href="https://www.credly.com/badges/8f2296ed-c90a-4026-96a5-712e4d23fbd9" target="_blank">Google Cloud Computing Foundations</a></li>
+                <li><a href="https://www.credly.com/badges/9ebd9162-4941-4c69-94da-d61e5a4cffe2" target="_blank">Google Cloud Cybersecurity</a></li>
+                <li><a href="https://www.credly.com/badges/476d0932-7afe-4366-9f60-6052872d975d" target="_blank">Google Cloud Data Analytics</a></li>
+            </ul>
+        </section>
+
         <section class="section projects">
             <h2>Projects</h2>
             <div class="contact-info">
-                <a href="https://github.com/afrinaldipdg?tab=packages">Project : DevOps Learning</a>
+                <a href="https://github.com/afrinaldipdg?tab=packages">Project: DevOps Learning</a>
             </div>
         </section>
+
         <section class="section contact">
             <h2>Contact</h2>
             <div class="contact-info">
-                <a href="tel:+6281374212002">Phone: +6281374212002</a>
+                <a href="tel:+6281374212002">Phone: +62 813 7421 2002</a>
                 <a href="mailto:afrinaldipdg@gmail.com">Email: afrinaldipdg@gmail.com</a>
                 <a href="https://www.linkedin.com/in/afrinaldi1983" target="_blank">LinkedIn</a>
                 <a href="https://github.com/afrinaldipdg/" target="_blank">GitHub</a>
