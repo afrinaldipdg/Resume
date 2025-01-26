@@ -79,6 +79,42 @@
             white-space: nowrap;
             z-index: 100;
         }
+        .skills a {
+            text-decoration: none;
+            color: #007BFF;
+            position: relative;
+        }
+        .skills a:hover::after {
+            content: attr(href);
+            position: absolute;
+            top: 20px;
+            left: 0;
+            background: #f1f1f1;
+            padding: 5px;
+            border: 1px solid #ddd;
+            font-size: 0.8em;
+            color: #555;
+            white-space: nowrap;
+            z-index: 100;
+        }
+        .projects a {
+            text-decoration: none;
+            color: #007BFF;
+            position: relative;
+        }
+        .projects a:hover::after {
+            content: attr(href);
+            position: absolute;
+            top: 20px;
+            left: 0;
+            background: #f1f1f1;
+            padding: 5px;
+            border: 1px solid #ddd;
+            font-size: 0.8em;
+            color: #555;
+            white-space: nowrap;
+            z-index: 100;
+        }
     </style>
 </head>
 <body>
@@ -124,7 +160,7 @@
             <ul>
                 <li>Programming Languages: <a href="https://www.dicoding.com/certificates/0LZ02VE0NX65" target="_blank">JavaScript</a>, <a href="https://www.dicoding.com/certificates/NVP778MWVPR0" target="_blank">Python</a></li>
                 <li>Frameworks: React, Node.js</li>
-                <li>Database: MySQL, PostgreSQL</li>
+                <li>Database: <a href="https://www.dicoding.com/certificates/1RXYEM0NKZVM" target="_blank">MySQL</a>, PostgreSQL</li>
                 <li>Others : <a href="https://www.dicoding.com/certificates/N9ZO5V4W6PG5" target="_blank">DevOps</a>,<a href="https://www.dicoding.com/certificates/JLX122JDGZ72" target="_blank">Machine Learning</a></li>
             </ul>
         </section>
